@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комплексные соединения - Учебный курс</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exam_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Шапка сайта -->
+        <header class="header">
+            <h1><i class="fas fa-atom"></i> Комплексные соединения</h1>
+            <p class="subtitle">Теория, примеры и тестирование</p>
+        </header>
+
+        <!-- Навигация по разделам -->
+        <nav class="nav-tabs" id="mainNav">
+            <button class="nav-btn active" data-target="theory">
+                <i class="fas fa-book"></i> Теория
+            </button>
+            <button class="nav-btn" data-target="examples">
+                <i class="fas fa-calculator"></i> Примеры решения
+            </button>
+            <button class="nav-btn" data-target="oge">
+                <i class="fas fa-graduation-cap"></i> ОГЭ
+            </button>
+            <button class="nav-btn" data-target="ege">
+                <i class="fas fa-university"></i> ЕГЭ
+            </button>
+            <button class="nav-btn" data-target="tests">
+                <i class="fas fa-clipboard-check"></i> Тесты
+            </button>
+        </nav>
+
+        <!-- Основное содержимое -->
+        <main class="content">
+            <!-- ================= ТЕОРИЯ ================= -->
+            <section id="theory" class="content-section active">
+                <div class="theory-container">
+                    <!-- Часть 1 -->
+                    <div class="theory-part active" id="part1">
+                        <h2><i class="fas fa-seedling"></i> Значение комплексных соединений</h2>
+                        <p>Комплексные соединения играют важнейшую роль в природе, являясь основой жизни (гемоглобин,
+                            хлорофилл, витамины, ферменты и многое другое). Они необходимы для обмена веществ, дыхания,
+                            питания растений и животных.</p>
+
+                        <div class="image-gallery">
+                            <div class="image-item">
+                                <img src="media/image1.png" alt="Хлорофилл" class="real-image">
+                                <p class="img-caption">Хлорофилл</p>
+                            </div>
+                            <div class="image-item">
+                                <img src="media/image2.png" alt="Гемоглобин" class="real-image">
+                                <p class="img-caption">Гемоглобин</p>
+                            </div>
+                            <div class="image-item">
+                                <img src="media/image3.png" alt="Витамин B12" class="real-image">
+                                <p class="img-caption">Витамин B12</p>
+                            </div>
+                        </div>
+
+                        <h3>Определение и структура</h3>
+                        <p><strong>Комплексные (или координационные) соединения </strong> - это соединения, получаемые
+                            сочетанием более простых веществ. Центральное место занимает катион металла, называемый
+                            <strong>центральным ионом или комплексообразователем</strong>. С ним связаны или
+                            координированы нейтральные молекулы или ионы, которые называются <b>лигандами</b>.
+                            Комплексообразователь и лиганды образуют <b>внутреннюю координационную сферу</b>, которую
+                            при записи формулы заключают в квадратные скобки. Остальные положительные или отрицательные
+                            ионы, не разместившиеся во внутренней сфере, составляют <b>внешнюю координационную
+                                сферу</b>.
+                        </p>
+
+                        <div class="formula-box">
+                            <img src="media/f.png" alt="Константа нестойкости" class="example-image"
+                                style="width:500px;">
+                        </div>
+
+                        <div class="next-btn-container">
+                            <button class="btn next-btn" onclick="showNextPart(1)">
+                                Далее: Классификация <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Часть 1.1 - КЛАССИФИКАЦИЯ -->
+                    <div class="theory-part" id="part1-1">
+                        <h2><i class="fas fa-diagram-project"></i> Классификация комплексных соединений</h2>
+
+                        <p>Многообразие комплексных соединений требует их систематизации. Существует несколько основных
+                            способов классификации.</p>
+
+                        <h3>1. По заряду внутренней сферы</h3>
+
+                        <div class="classification-block">
+                            <h4>а) Катионные комплексы</h4>
+                            <p>Внутренняя сфера (комплексный ион) имеет положительный заряд. Во внешней сфере находятся
+                                анионы.</p>
+                            <div class="examples">
+                                <p class="formula">[Сu(NH₃)₄](OH)₂</p>
+                                <p class="formula">[Al(H₂O)₆]Cl₃</p>
+                                <p class="formula">[Zn(NH₃)₄]Cl₂</p>
+                            </div>
+                        </div>
+
+                        <div class="classification-block">
+                            <h4>б) Анионные комплексы</h4>
+                            <p>Внутренняя сфера имеет отрицательный заряд. Во внешней сфере находятся катионы.</p>
+                            <div class="examples">
+                                <p class="formula">K₄[Fe(CN)₆]</p>
+                                <p class="formula">K[Al(OH)₄]</p>
+                                <p class="formula">K₂[Zn(ОН)₄]</p>
+                            </div>
+                        </div>
+
+                        <div class="classification-block">
+                            <h4>в) Нейтральные комплексы</h4>
+                            <p>Соединения состоят только из внутренней сферы, заряд которой равен нулю. Внешняя сфера
+                                отсутствует.</p>
+                            <div class="examples">
+                                <p class="formula">[Ni(CO)₄]⁰</p>
+                                <p class="formula">[Pt(NH₃)₂Cl₂]⁰</p>
+                            </div>
+                        </div>
+
+                        <h3>2. По классу соединения</h3>
+                        <p>По этому признаку комплексы делятся на кислоты, основания и соли, сохраняя характерные для
+                            этих классов свойства.</p>
+                        <div class="classification-grid"
+                            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 15px 0;">
+                            <div class="classification-block"
+                                style="border-left: 4px solid #ff9800; padding: 10px; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+                                <h4 style="margin-top: 0; color: #ff9800;">Кислоты</h4>
+                                <p class="formula" style="font-size: 0.9rem;">H₂[ZnF₆]</p>
+                                <p class="formula" style="font-size: 0.9rem;">H[AuCl₄]</p>
+                            </div>
+                            <div class="classification-block"
+                                style="border-left: 4px solid #4caf50; padding: 10px; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+                                <h4 style="margin-top: 0; color: #4caf50;">Основания</h4>
+                                <p class="formula" style="font-size: 0.9rem;">[Ag(NH₃)₂]OH</p>
+                                <p class="formula" style="font-size: 0.9rem;">[Сu(NH₃)₄](OH)₂</p>
+                            </div>
+                            <div class="classification-block"
+                                style="border-left: 4px solid #2196f3; padding: 10px; background: #f8f9fa; border-radius: 0 8px 8px 0;">
+                                <h4 style="margin-top: 0; color: #2196f3;">Соли</h4>
+                                <p class="formula" style="font-size: 0.9rem;">K₃[Fe(CN)₆]</p>
+                                <p class="formula" style="font-size: 0.9rem;">[Сu(NH₃)₄]SO₄</p>
+                            </div>
+                        </div>
+
+                        <h3>3. По природе лиганда</h3>
+
+                        <div class="image-gallery" style="grid-template-columns: repeat(4, 1fr);">
+                            <div class="image-item">
+                                <div
+                                    style="background: #e3f2fd; padding: 15px; border-radius: 8px; text-align: center;">
+                                    <i class="fas fa-water" style="font-size: 2.5rem; color: #1976d2;"></i>
+                                    <p class="img-caption"><strong>Аквакомплексы</strong><br> H₂O (вода)</p>
+                                    <p class="formula" style="font-size: 0.8rem;">[Al(H₂O)₆]Cl₃</p>
+                                </div>
+                            </div>
+                            <div class="image-item">
+                                <div
+                                    style="background: #e8f5e8; padding: 15px; border-radius: 8px; text-align: center;">
+                                    <i class="fas fa-wind" style="font-size: 2.5rem; color: #2e7d32;"></i>
+                                    <p class="img-caption"><strong>Аммиакаты</strong><br> NH₃ (аммиак)</p>
+                                    <p class="formula" style="font-size: 0.8rem;">[Pt(NH₃)₂Cl₂]</p>
+                                </div>
+                            </div>
+                            <div class="image-item">
+                                <div
+                                    style="background: #ffebee; padding: 15px; border-radius: 8px; text-align: center;">
+                                    <i class="fas fa-flask" style="font-size: 2.5rem; color: #c62828;"></i>
+                                    <p class="img-caption"><strong>Ацидокомплексы</strong><br> Кислотные остатки</p>
+                                    <p class="formula" style="font-size: 0.8rem;">K₄[Fe(CN)₆]</p>
+                                </div>
+                            </div>
+                            <div class="image-item">
+                                <div
+                                    style="background: #fff3e0; padding: 15px; border-radius: 8px; text-align: center;">
+                                    <i class="fas fa-circle" style="font-size: 2.5rem; color: #f57c00;"></i>
+                                    <p class="img-caption"><strong>Гидроксокомплексы</strong><br> OH⁻ (гидроксид)</p>
+                                    <p class="formula" style="font-size: 0.8rem;">K[Al(OH)₄]</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>4. По способности проводить электрический ток</h3>
+
+                        <table class="coordination-table">
+                            <thead>
+                                <tr>
+                                    <th>Тип</th>
+                                    <th>Характеристика</th>
+                                    <th>Пример</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Электролиты</strong></td>
+                                    <td>Имеют внешнюю сферу, диссоциируют на ионы</td>
+                                    <td class="formula">[Сu(NH₃)₄](ОН)₂</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Неэлектролиты</strong></td>
+                                    <td>Состоят только из внутренней сферы, не диссоциируют</td>
+                                    <td class="formula">[Ni(CO)₄]</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="navigation-buttons">
+                            <button class="btn prev-btn" onclick="showPrevPart(1.1)">
+                                <i class="fas fa-arrow-left"></i> Назад
+                            </button>
+                            <button class="btn next-btn" onclick="showNextPart(1.1)">
+                                Далее: Комплексообразователи и лиганды <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Часть 2 -->
+                    <div class="theory-part" id="part2">
+                        <h2><i class="fas fa-magnet"></i> Комплексообразователи и лиганды</h2>
+
+                        <h3>Комплексообразователи</h3>
+                        <p>Комплексообразователями могут быть нейтральные атомы, катионы и анионы, имеющие вакантные
+                            орбитали. Наибольшей способностью к комплексообразованию обладают катионы переходных
+                            элементов:</p>
+
+                        <div class="elements-grid">
+                            <span class="element">Fe</span>
+                            <span class="element">Ni</span>
+                            <span class="element">Co</span>
+                            <span class="element">Cr</span>
+                            <span class="element">Cu</span>
+                            <span class="element">Zn</span>
+                            <span class="element">Ag</span>
+                            <span class="element">Pt</span>
+                        </div>
+
+                        <h3>Лиганды</h3>
+                        <p>В качестве лигандов могут быть:</p>
+                        <ul>
+                            <li><strong>Молекулы</strong>: H₂O (аква), NH₃ (аммин), CO, NO</li>
+                            <li><strong>Анионы</strong>: Cl⁻ (хлоро), Br⁻ (бромо), I⁻ (йодо), OH⁻ (гидроксо), CN⁻
+                                (циано), SCN⁻ (тиоцианато)</li>
+                        </ul>
+                        <p>Лиганды, как правило, имеют одну или несколько неподелённых пар электронов.</p>
+
+                        <h3>Определение заряда комплексообразователя</h3>
+                        <p>Заряд комплексообразователя определяется, исходя из заряда комплексного иона и заряда
+                            лигандов:</p>
+
+                        <div class="examples">
+                            <div class="example">
+                                <p class="formula">[Fe(CN)₆]⁴⁻</p>
+                                <p>[x + (-1)×6] = -4<br>x = +2</p>
+                            </div>
+                            <div class="example">
+                                <p class="formula">[Pt(NH₃)₂Cl₂]⁰</p>
+                                <p>[x + (0×2) + (-1)×2] = 0<br>x = +2</p>
+                            </div>
+                            <div class="example">
+                                <p class="formula">[Ag(NH₃)₂]⁺</p>
+                                <p>[x + (0×2)] = +1<br>x = +1</p>
+                            </div>
+                        </div>
+
+                        <div class="navigation-buttons">
+                            <button class="btn prev-btn" onclick="showPrevPart(2)">
+                                <i class="fas fa-arrow-left"></i> Назад
+                            </button>
+                            <button class="btn next-btn" onclick="showNextPart(2)">
+                                Далее: Номенклатура <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Часть 3 -->
+                    <div class="theory-part" id="part3">
+                        <h2><i class="fas fa-spell-check"></i> Номенклатура комплексных соединений</h2>
+
+                        <p>В названиях комплексных соединений используют общепринятое правило: <strong>сначала называют
+                                анион, затем катион</strong>.</p>
+
+                        <h3>Правила названия комплексных катионов:</h3>
+                        <p>При составлении названия комплексного катиона соблюдают следующий порядок:</p>
+                        <ol class="rules-list">
+                            <li>Указать число отрицательно заряженных лигандов, используя греческие числительные: ди,
+                                три, тетра, пента, гекса и т.д.;</li>
+                            <li>Назвать отрицательно заряженные лиганды с окончанием «о» (Cl⁻ – хлоро, I⁻ – йодо, SO₄²⁻
+                                – сульфато, OH⁻ – гидроксо, CN⁻ – циано, NO₃⁻ – нитро и т.д.);</li>
+                            <li>Назвать число и название нейтральных лигандов: H₂O – аква, NH₃ – аммин, CO – карбонил;
+                            </li>
+                            <li>Назвать комплексообразователь с указанием его степени окисления.</li>
+                        </ol>
+
+                        <h4>Греческие числительные и названия лигандов:</h4>
+                        <table class="coordination-table" style="width: 100%; max-width: 500px; margin: 20px auto;">
+                            <thead>
+                                <tr>
+                                    <th>Числительные</th>
+                                    <th>Лиганды</th>
+                                    <th>Название</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2 — ди-</td>
+                                    <td>H₂O</td>
+                                    <td>аква</td>
+                                </tr>
+                                <tr>
+                                    <td>3 — три-</td>
+                                    <td>NH₃</td>
+                                    <td>аммин</td>
+                                </tr>
+                                <tr>
+                                    <td>4 — тетра-</td>
+                                    <td>CO</td>
+                                    <td>карбонил</td>
+                                </tr>
+                                <tr>
+                                    <td>5 — пента-</td>
+                                    <td>OH⁻</td>
+                                    <td>гидроксо-</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">6 — гекса-</td>
+                                    <td>CN⁻</td>
+                                    <td>циано-</td>
+                                </tr>
+                                <tr>
+                                    <td>NO₃⁻</td>
+                                    <td>нитро-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Примеры названий комплексных катионов:</h3>
+                        <div class="nomenclature-examples">
+                            <div class="example-box">
+                                <div class="example-content">
+                                    <div class="example-text">
+                                        <p class="formula">[Cu(NH₃)₄]SO₄</p>
+                                        <p class="explanation">
+                                            <span class="part">сульфат</span>
+                                            <span class="part">тетрааммин</span>
+                                            <span class="part">меди(II)</span>
+                                        </p>
+                                        <p class="full-name"><strong>Сульфат тетраамминмеди(II)</strong></p>
+                                    </div>
+                                    <img src="media/тетрааммин.png" class="example-image" alt="Тетраамминмеди(II)">
+                                </div>
+                            </div>
+
+                            <div class="example-box">
+                                <div class="example-content">
+                                    <div class="example-text">
+                                        <p class="formula">[Co(NH₃)₅Br]SO₄</p>
+                                        <p class="explanation">
+                                            <span class="part">сульфат</span>
+                                            <span class="part">бромо-</span>
+                                            <span class="part">пентааммин-</span>
+                                            <span class="part">кобальта(III)</span>
+                                        </p>
+                                        <p class="full-name"><strong>Сульфат бромопентаамминкобальта(III)</strong></p>
+                                    </div>
+                                    <img src="media/пентааммин.png" class="example-image"
+                                        alt="Бромопентаамминкобальта(III)">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Названия комплексных анионов</h3>
+                        <p>Название комплексного аниона составляется аналогично названию катиона и заканчивается
+                            <strong>суффиксом «ат»</strong>.
+                        </p>
+
+                        <div class="nomenclature-examples">
+                            <div class="example-box">
+                                <div class="example-content">
+                                    <div class="example-text">
+                                        <p class="formula">K₃[Fe(CN)₆]</p>
+                                        <p class="explanation">
+                                            <span class="part">калий</span>
+                                            <span class="part">гексациано-</span>
+                                            <span class="part">феррат(III)</span>
+                                        </p>
+                                        <p class="full-name"><strong>Гексацианоферрат(III) калия</strong></p>
+                                    </div>
+                                    <img src="media/гексациано.png" class="example-image"
+                                        alt="Гексацианоферрат(III) калия">
+                                </div>
+                            </div>
+
+                            <div class="example-box">
+                                <div class="example-content">
+                                    <div class="example-text">
+                                        <p class="formula">K₂[Zn(OH)₄]</p>
+                                        <p class="explanation">
+                                            <span class="part">калий</span>
+                                            <span class="part">тетрагидроксо-</span>
+                                            <span class="part">цинкат</span>
+                                        </p>
+                                        <p class="full-name"><strong>Тетрагидроксоцинкат калия</strong></p>
+                                    </div>
+                                    <img src="media/тетрагидр.png" class="example-image"
+                                        alt="Тетрагидроксоцинкат калия">
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Названия нейтральных комплексов</h3>
+                        <p>Нейтральный комплекс называют так же, как и катионный, но комплексообразователь указывают в
+                            именительном падеже, степень окисления не указывают.</p>
+
+                        <div class="nomenclature-examples">
+                            <div class="example-box">
+                                <div class="example-content">
+                                    <div class="example-text">
+                                        <p class="formula">[Pt(NH₃)₂Cl₂]</p>
+                                        <p class="explanation">
+                                            <span class="part">дихлоро-</span>
+                                            <span class="part">диаммин-</span>
+                                            <span class="part">платина</span>
+                                        </p>
+                                        <p class="full-name"><strong>Дихлородиамминплатина</strong></p>
+                                        <p class="note"
+                                            style="color: var(--gray); font-style: italic; margin-top: 10px;">
+                                            (степень окисления не указывается)
+                                        </p>
+                                    </div>
+                                    <img src="media/дихлоро.png" class="example-image" alt="Дихлородиамминплатина">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="navigation-buttons">
+                            <button class="btn prev-btn" onclick="showPrevPart(3)">
+                                <i class="fas fa-arrow-left"></i> Назад
+                            </button>
+                            <button class="btn next-btn" onclick="showNextPart(3)">
+                                Далее: Координационное число <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Часть 4 -->
+                    <div class="theory-part" id="part4">
+                        <h2><i class="fas fa-hashtag"></i> Координационное число и устойчивость</h2>
+
+                        <h3>Координационное число (КЧ)</h3>
+                        <p>Показывает число лигандов, которые располагаются вокруг центрального иона. Зависит от заряда
+                            центрального атома:</p>
+
+                        <table class="coordination-table">
+                            <thead>
+                                <tr>
+                                    <th>Заряд центрального атома</th>
+                                    <th>Координационное число</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>+1</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>+2</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>+3</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>+4</td>
+                                    <td>8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4>Наиболее частые координационные числа:</h4>
+                        <table class="elements-table">
+                            <thead>
+                                <tr>
+                                    <th>Ион</th>
+                                    <th>КЧ</th>
+                                    <th>Ион</th>
+                                    <th>КЧ</th>
+                                    <th>Ион</th>
+                                    <th>КЧ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Al³⁺</td>
+                                    <td>6</td>
+                                    <td>Cu²⁺</td>
+                                    <td>4 и 6</td>
+                                    <td>Co²⁺</td>
+                                    <td>4 и 6</td>
+                                </tr>
+                                <tr>
+                                    <td>Hg²⁺</td>
+                                    <td>4</td>
+                                    <td>Au³⁺</td>
+                                    <td>4</td>
+                                    <td>Co³⁺</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Pb²⁺</td>
+                                    <td>4</td>
+                                    <td>Pt⁴⁺</td>
+                                    <td>6</td>
+                                    <td>Fe²⁺</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Sn⁴⁺</td>
+                                    <td>6</td>
+                                    <td>Ni²⁺</td>
+                                    <td>4 и 6</td>
+                                    <td>Fe³⁺</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Ag⁺</td>
+                                    <td>2</td>
+                                    <td>Ni³⁺</td>
+                                    <td>6</td>
+                                    <td>Cr³⁺</td>
+                                    <td>6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3>Дентатность лигандов</h3>
+                        <p><strong>Дентатность</strong> — количество связей, которые может образовывать лиганд.
+                            Например, в [Cu(NH₃)₄](OH)₂ дентатность аммиака равна 1 (монодентатен).</p>
+
+                        <h3>Образование комплексов меди с аммиаком</h3>
+                        <div class="reaction-box">
+                            <p class="reaction">CuSO₄ + 2NH₃ + 2H₂O → Cu(OH)₂↓ + (NH₄)₂SO₄</p>
+                            <p class="reaction-description">голубой раствор → синий осадок</p>
+                            <p class="reaction">Cu(OH)₂ + 4NH₃ → [Cu(NH₃)₄](OH)₂</p>
+                            <p class="reaction-description">синий осадок → васильковый раствор</p>
+                        </div>
+
+                        <div class="navigation-buttons">
+                            <button class="btn prev-btn" onclick="showPrevPart(4)">
+                                <i class="fas fa-arrow-left"></i> Назад
+                            </button>
+                            <button class="btn next-btn" onclick="showNextPart(4)">
+                                Далее: Диссоциация и устойчивость <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Часть 5 -->
+                    <div class="theory-part" id="part5">
+                        <h2><i class="fas fa-balance-scale"></i> Диссоциация и константа нестойкости</h2>
+
+                        <h3>Диссоциация комплексных соединений</h3>
+                        <p>Комплексные соединения диссоциируют в растворе по типу сильного электролита (первичная
+                            диссоциация):</p>
+                        <p class="formula">[Cu(NH₃)₄]SO₄ → [Cu(NH₃)₄]²⁺ + SO₄²⁻</p>
+
+                        <p>Комплексные ионы способны ступенчато диссоциировать по типу слабого электролита (вторичная
+                            диссоциация):</p>
+                        <div class="dissociation-steps">
+                            <p>[Cu(NH₃)₄]²⁺ ⇌ [Cu(NH₃)₃]²⁺ + NH₃</p>
+                            <p>[Cu(NH₃)₃]²⁺ ⇌ [Cu(NH₃)₂]²⁺ + NH₃</p>
+                            <p>[Cu(NH₃)₂]²⁺ ⇌ [Cu(NH₃)]²⁺ + NH₃</p>
+                            <p>[Cu(NH₃)]²⁺ ⇌ Cu²⁺ + NH₃</p>
+                        </div>
+
+                        <h3>Константа нестойкости (К<sub>н</sub>)</h3>
+                        <p>Выражение константа нестойкости для тетраамминмеди(II):</p>
+                        <div class="formula-box">
+                            <p>K<sub>н</sub> = [Cu²⁺][NH₃]⁴ / [[Cu(NH₃)₄]²⁺]</p>
+                        </div>
+                        <p>где [Cu²⁺], [NH₃] и [[Cu(NH₃)₄]²⁺] — равновесные концентрации (моль/л).</p>
+                        <p><strong>Чем меньше значение К<sub>н</sub>, тем более устойчиво комплексное
+                                соединение.</strong></p>
+
+                        <h3>Свойства комплексных соединений</h3>
+                        <p>В растворах комплексных веществ при протекании химических реакций проявляются свойства не
+                            только отдельных ионов, атомов или молекул, входящих в состав этого комплекса, а и свойства
+                            целиком всего координационного соединения.</p>
+
+                        <div class="theory-end">
+                            <div class="end-actions">
+                                <button class="btn action-btn" onclick="showExamples()">
+                                    <i class="fas fa-calculator"></i> Примеры решения задач
+                                </button>
+                                <button class="btn action-btn primary" onclick="showTests()">
+                                    Перейти к тесту <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+                            <p class="source-info">Дополнительная информация: <a
+                                    href="https://urok.1sept.ru/publication/79883" target="_blank">urok.1sept.ru</a></p>
+                        </div>
+
+                        <div class="navigation-buttons">
+                            <button class="btn prev-btn" onclick="showPrevPart(5)">
+                                <i class="fas fa-arrow-left"></i> Назад
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ================= ПРИМЕРЫ РЕШЕНИЯ ЗАДАЧ ================= -->
+            <section id="examples" class="content-section">
+                <h2><i class="fas fa-calculator"></i> Примеры решения задач</h2>
+
+                <div class="example-problem">
+                    <h3>Пример 1</h3>
+                    <p><strong>Задача:</strong> Определите комплексообразователь, его заряд и координационное число в
+                        Ca[Al(OH)₅H₂O].</p>
+
+                    <div class="solution">
+                        <h4>Решение:</h4>
+                        <p>1. Определим внешнюю и внутреннюю сферы:</p>
+                        <p>Формула: Ca[Al(OH)₅H₂O]</p>
+                        <p>Внешняя сфера: Ca²⁺</p>
+                        <p>Внутренняя сфера: [Al(OH)₅H₂O]²⁻</p>
+
+                        <p>2. Комплексообразователь — Al (алюминий)</p>
+
+                        <p>3. Определим заряд комплексообразователя (x):</p>
+                        <p>Заряд комплексного иона: -2</p>
+                        <p>Лиганды: 5 OH⁻ (заряд -1 каждый) и 1 H₂O (заряд 0)</p>
+                        <p>Составим уравнение: x + 5×(-1) + 1×0 = -2</p>
+                        <p>x - 5 = -2 → x = +3</p>
+
+                        <p>4. Координационное число = количество лигандов = 5 OH⁻ + 1 H₂O = 6</p>
+
+                        <p><strong>Ответ:</strong> Комплексообразователь — Al³⁺, заряд +3, координационное число = 6.
+                        </p>
+                        <p><strong>Объяснение:</strong> В соединении Ca[Al(OH)₅H₂O] комплексный ион [Al(OH)₅H₂O]²⁻ имеет
+                            заряд -2. Лиганды: 5 OH⁻ дают суммарный заряд -5, 1 H₂O имеет заряд 0. Чтобы суммарный заряд
+                            был -2, заряд алюминия должен быть +3. Координационное число равно общему количеству
+                            лигандов: 5 + 1 = 6.</p>
+                    </div>
+                </div>
+
+                <div class="example-problem">
+                    <h3>Пример 2</h3>
+                    <p><strong>Задача:</strong> Определите комплексообразователь, его заряд и координационное число в
+                        K₄[Ir(SO₄)₃Cl].</p>
+
+                    <div class="solution">
+                        <h4>Решение:</h4>
+                        <p>1. Определим внешнюю и внутреннюю сферы:</p>
+                        <p>Формула: K₄[Ir(SO₄)₃Cl]</p>
+                        <p>Внешняя сфера: 4K⁺</p>
+                        <p>Внутренняя сфера: [Ir(SO₄)₃Cl]⁴⁻</p>
+
+                        <p>2. Комплексообразователь — Ir (иридий)</p>
+
+                        <p>3. Определим заряд комплексообразователя (x):</p>
+                        <p>Заряд комплексного иона: -4</p>
+                        <p>Лиганды: 3 SO₄²⁻ (заряд -2 каждый) и 1 Cl⁻ (заряд -1)</p>
+                        <p>Составим уравнение: x + 3×(-2) + 1×(-1) = -4</p>
+                        <p>x - 6 - 1 = -4 → x - 7 = -4 → x = +3</p>
+
+                        <p>4. Координационное число = количество лигандов = 3 SO₄²⁻ + 1 Cl⁻ = 4</p>
+
+                        <p><strong>Ответ:</strong> Комплексообразователь — Ir³⁺, заряд +3, координационное число = 4.
+                        </p>
+                        <p><strong>Объяснение:</strong> В соединении K₄[Ir(SO₄)₃Cl] комплексный ион [Ir(SO₄)₃Cl]⁴⁻ имеет
+                            заряд -4. Лиганды: 3 SO₄²⁻ дают суммарный заряд -6, 1 Cl⁻ дает заряд -1. Чтобы суммарный
+                            заряд был -4, заряд иридия должен быть +3. Координационное число равно общему количеству
+                            лигандов: 3 + 1 = 4.</p>
+                    </div>
+                </div>
+
+                <div class="example-problem">
+                    <h3>Пример 3</h3>
+                    <p><strong>Задача:</strong> Какие из следующих ионов могут быть комплексообразователями: Li⁺, Na⁺,
+                        Ti⁴⁺, Sc³⁺, Be²⁺, Fe³⁺, Fe²⁺?</p>
+
+                    <div class="solution">
+                        <h4>Решение:</h4>
+                        <p>1. Проанализируем каждый ион:</p>
+                        <ul>
+                            <li><strong>Li⁺</strong> и <strong>Na⁺</strong> — ионы щелочных металлов, имеют большой
+                                ионный радиус, малый заряд, полностью заполненные электронные оболочки. Очень слабые
+                                комплексообразователи.</li>
+                            <li><strong>Ti⁴⁺</strong> — ион переходного металла, имеет высокий заряд (+4), незаполненные
+                                d-орбитали. Хороший комплексообразователь.</li>
+                            <li><strong>Sc³⁺</strong> — ион переходного металла, заряд +3, незаполненные d-орбитали.
+                                Хороший комплексообразователь.</li>
+                            <li><strong>Be²⁺</strong> — ион щелочноземельного металла, малый заряд, полностью
+                                заполненные оболочки. Слабый комплексообразователь.</li>
+                            <li><strong>Fe³⁺</strong> и <strong>Fe²⁺</strong> — ионы переходного металла, имеют
+                                незаполненные d-орбитали, заряды +3 и +2 соответственно. Отличные комплексообразователи.
+                            </li>
+                        </ul>
+
+                        <p>2. Комплексообразователями обычно являются ионы переходных металлов, которые имеют:</p>
+                        <ul>
+                            <li>Незаполненные d- или f-орбитали</li>
+                            <li>Достаточно высокий заряд</li>
+                            <li>Малый ионный радиус</li>
+                        </ul>
+
+                        <p><strong>Ответ:</strong> Ti⁴⁺, Sc³⁺, Fe³⁺, Fe²⁺.</p>
+                        <p><strong>Объяснение:</strong> Ионы переходных металлов (Ti⁴⁺, Sc³⁺, Fe³⁺, Fe²⁺) имеют
+                            незаполненные d-орбитали, что позволяет им принимать неподеленные электронные пары от
+                            лигандов. Ионы щелочных (Li⁺, Na⁺) и щелочноземельных (Be²⁺) металлов имеют полностью
+                            заполненные электронные оболочки и большой ионный радиус, поэтому образуют менее устойчивые
+                            комплексы.</p>
+                    </div>
+                </div>
+
+                <div class="example-problem">
+                    <h3>Пример 4</h3>
+                    <p><strong>Задача:</strong> Хром образует с аммиаком две комплексные соли: CrCl₃·5NH₃ и CrCl₃·6NH₃.
+                        Азотнокислое серебро осаждает весь хлор из первой соли, а из второй - только 2/3 хлора. Напишите
+                        формулы.</p>
+
+                    <div class="solution">
+                        <h4>Решение:</h4>
+                        <p>1. Проанализируем реакцию с AgNO₃:</p>
+                        <p>AgNO₃ осаждает только хлор, находящийся во внешней сфере комплекса в виде ионов Cl⁻. Хлор,
+                            находящийся во внутренней сфере (в качестве лиганда), не осаждается.</p>
+
+                        <p>2. Для соли CrCl₃·6NH₃:</p>
+                        <p>Если AgNO₃ осаждает весь хлор (3 иона Cl⁻), значит весь хлор находится во внешней сфере.</p>
+                        <p>Формула: [Cr(NH₃)₆]Cl₃</p>
+                        <p>Диссоциация: [Cr(NH₃)₆]Cl₃ → [Cr(NH₃)₆]³⁺ + 3Cl⁻</p>
+
+                        <p>3. Для соли CrCl₃·5NH₃:</p>
+                        <p>Если AgNO₃ осаждает 2/3 хлора (2 из 3 ионов Cl⁻), значит 2 иона Cl⁻ находятся во внешней
+                            сфере, а 1 ион Cl⁻ — во внутренней сфере (в качестве лиганда).</p>
+                        <p>Формула: [Cr(NH₃)₅Cl]Cl₂</p>
+                        <p>Диссоциация: [Cr(NH₃)₅Cl]Cl₂ → [Cr(NH₃)₅Cl]²⁺ + 2Cl⁻</p>
+
+                        <p><strong>Ответ:</strong> [Cr(NH₃)₆]Cl₃ и [Cr(NH₃)₅Cl]Cl₂</p>
+                        <p><strong>Объяснение:</strong> Азотнокислое серебро реагирует только с хлорид-ионами,
+                            находящимися во внешней сфере комплекса. Если осаждается весь хлор (3 Cl⁻), значит все ионы
+                            хлора находятся во внешней сфере: [Cr(NH₃)₆]Cl₃. Если осаждается 2/3 хлора (2 Cl⁻), значит 1
+                            Cl⁻ находится во внутренней сфере в качестве лиганда: [Cr(NH₃)₅Cl]Cl₂.</p>
+                    </div>
+                </div>
+
+                <div class="example-problem">
+                    <h3>Пример 5</h3>
+                    <p><strong>Задача:</strong> Напишите математическое выражение константы нестойкости для
+                        [Cu(NH₃)₄]SO₄.</p>
+
+                    <div class="solution">
+                        <h4>Решение:</h4>
+                        <p>1. Запишем уравнение диссоциации комплексного соединения:</p>
+                        <p>Первичная диссоциация (сильный электролит):</p>
+                        <p class="formula">[Cu(NH₃)₄]SO₄ → [Cu(NH₃)₄]²⁺ + SO₄²⁻</p>
+
+                        <p>2. Вторичная диссоциация комплексного иона (слабый электролит):</p>
+                        <p class="formula">[Cu(NH₃)₄]²⁺ ⇌ Cu²⁺ + 4NH₃</p>
+
+                        <p>3. Константа нестойкости (K<sub>н</sub>) — это константа равновесия для обратимого распада
+                            комплексного иона:</p>
+                        <div class="formula-box">
+                            <p>K<sub>н</sub> = [Cu²⁺][NH₃]⁴ / [[Cu(NH₃)₄]²⁺]</p>
+                        </div>
+
+                        <p>где:</p>
+                        <ul>
+                            <li>[Cu²⁺] — равновесная концентрация ионов меди(II)</li>
+                            <li>[NH₃] — равновесная концентрация аммиака</li>
+                            <li>[[Cu(NH₃)₄]²⁺] — равновесная концентрация комплексного иона</li>
+                        </ul>
+
+                        <p><strong>Ответ:</strong> K<sub>н</sub> = [Cu²⁺][NH₃]⁴ / [[Cu(NH₃)₄]²⁺]</p>
+                        <p><strong>Объяснение:</strong> Константа нестойкости характеризует устойчивость комплексного
+                            иона в растворе. Для комплексного иона [Cu(NH₃)₄]²⁺, который обратимо диссоциирует на Cu²⁺ и
+                            4NH₃, константа нестойкости равна произведению равновесных концентраций продуктов
+                            диссоциации (Cu²⁺ и NH₃), деленному на равновесную концентрацию комплексного иона. Чем
+                            меньше значение K<sub>н</sub>, тем устойчивее комплекс.</p>
+                    </div>
+                </div>
+
+                <div class="end-actions">
+                    <button class="btn action-btn" onclick="showTheory()">
+                        <i class="fas fa-book"></i> Вернуться к теории
+                    </button>
+                    <button class="btn action-btn primary" onclick="showTests()">
+                        Перейти к тесту <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- ================= ОГЭ ================= -->
+            <section id="oge" class="content-section">
+                <div class="exam-header">
+                    <h2><i class="fas fa-graduation-cap"></i> Подготовка к ОГЭ по химии</h2>
+                    <p class="exam-subtitle">Задания из открытого банка ФИПИ по теме "Комплексные соединения"</p>
+                    <div class="codifier-info">
+                        <div class="codifier-badge">
+                            <i class="fas fa-tag"></i>
+                            <span>Кодификатор ОГЭ 2026: <strong>2.5, 3.2, 4.7</strong></span>
+                        </div>
+                        <button class="btn-sync" onclick="syncFipiTasks('oge')">
+                            <i class="fas fa-sync-alt"></i> Синхронизировать с ФИПИ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="exam-content">
+                    <div class="topic-filters">
+                        <button class="filter-btn active" data-exam="oge" data-topic="all">
+                            <i class="fas fa-list"></i> Все задания
+                        </button>
+                        <button class="filter-btn" data-exam="oge" data-topic="structure">
+                            <i class="fas fa-cube"></i> Строение комплексов
+                        </button>
+                        <button class="filter-btn" data-exam="oge" data-topic="nomenclature">
+                            <i class="fas fa-tag"></i> Номенклатура
+                        </button>
+                        <button class="filter-btn" data-exam="oge" data-topic="reactions">
+                            <i class="fas fa-flask"></i> Химические реакции
+                        </button>
+                        <button class="filter-btn" data-exam="oge" data-topic="calculations">
+                            <i class="fas fa-calculator"></i> Расчетные задачи
+                        </button>
+                    </div>
+
+                    <div class="tasks-container" id="ogeTasksContainer">
+                        <div class="loading-spinner">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Загрузка заданий из банка ФИПИ...</p>
+                        </div>
+                    </div>
+                    <div class="pagination" id="ogePagination"></div>
+                </div>
+            </section>
+
+            <!-- ================= ЕГЭ ================= -->
+            <section id="ege" class="content-section">
+                <div class="exam-header ege-header">
+                    <h2><i class="fas fa-university"></i> Подготовка к ЕГЭ по химии</h2>
+                    <p class="exam-subtitle">Задания из открытого банка ФИПИ по теме "Комплексные соединения"</p>
+                    <div class="codifier-info">
+                        <div class="codifier-badge ege">
+                            <i class="fas fa-tag"></i>
+                            <span>Кодификатор ЕГЭ 2026: <strong>1.4.5, 2.6, 3.7, 4.2.6</strong></span>
+                        </div>
+                        <button class="btn-sync" onclick="syncFipiTasks('ege')">
+                            <i class="fas fa-sync-alt"></i> Синхронизировать с ФИПИ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="exam-content">
+                    <div class="topic-filters">
+                        <button class="filter-btn active" data-exam="ege" data-topic="all">
+                            <i class="fas fa-list"></i> Все задания
+                        </button>
+                        <button class="filter-btn" data-exam="ege" data-topic="structure">
+                            <i class="fas fa-cube"></i> Строение комплексов
+                        </button>
+                        <button class="filter-btn" data-exam="ege" data-topic="nomenclature">
+                            <i class="fas fa-tag"></i> Номенклатура
+                        </button>
+                        <button class="filter-btn" data-exam="ege" data-topic="isomerism">
+                            <i class="fas fa-shapes"></i> Изомерия
+                        </button>
+                        <button class="filter-btn" data-exam="ege" data-topic="stability">
+                            <i class="fas fa-balance-scale"></i> Константа нестойкости
+                        </button>
+                        <button class="filter-btn" data-exam="ege" data-topic="reactions">
+                            <i class="fas fa-flask"></i> Химические реакции
+                        </button>
+                        <button class="filter-btn" data-exam="ege" data-topic="calculations">
+                            <i class="fas fa-calculator"></i> Расчетные задачи
+                        </button>
+                    </div>
+
+                    <div class="tasks-container" id="egeTasksContainer">
+                        <div class="loading-spinner">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Загрузка заданий из банка ФИПИ...</p>
+                        </div>
+                    </div>
+                    <div class="pagination" id="egePagination"></div>
+                </div>
+            </section>
+
+            <!-- ================= ТЕСТЫ ================= -->
+            <section id="tests" class="content-section">
+                <h2><i class="fas fa-clipboard-check"></i> Тестирование по теме "Комплексные соединения"</h2>
+
+                <div class="test-intro" id="testIntro">
+                    <p>Выберите вариант теста. Каждый тест содержит 5 заданий с единственным правильным ответом.</p>
+
+                    <div class="variants-grid" id="variantsGrid">
+                        <!-- Варианты будут сгенерированы JavaScript -->
+                    </div>
+                </div>
+
+                <div class="test-container" id="testContainer" style="display: none;">
+                    <div class="test-header">
+                        <h3 id="testTitle">Вариант 1</h3>
+                        <div class="test-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <span id="progressText">1/5</span>
+                        </div>
+                    </div>
+
+                    <div class="question-container" id="questionContainer">
+                        <!-- Вопросы будут загружены динамически -->
+                    </div>
+
+                    <div class="test-navigation">
+                        <button class="btn prev-btn" id="prevQuestion" disabled>
+                            <i class="fas fa-arrow-left"></i> Предыдущий
+                        </button>
+                        <button class="btn next-btn" id="nextQuestion">
+                            Следующий <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button class="btn submit-btn" id="submitTest" style="display: none;">
+                            Завершить тест <i class="fas fa-check"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="test-results" id="testResults" style="display: none;">
+                    <h3>Результаты теста</h3>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <span id="scorePercent">0%</span>
+                        </div>
+                        <p>Правильных ответов: <span id="correctCount">0</span> из <span id="totalQuestions">5</span>
+                        </p>
+                    </div>
+
+                    <div class="results-details" id="resultsDetails">
+                        <!-- Детали результатов -->
+                    </div>
+
+                    <div class="results-actions">
+                        <button class="btn action-btn" onclick="showTestVariants()">
+                            <i class="fas fa-redo"></i> Выбрать другой тест
+                        </button>
+                        <button class="btn action-btn" onclick="showTheory()">
+                            <i class="fas fa-book"></i> Повторить теорию
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Учебный материал по комплексным соединениям. Основано на материалах c сайта <a
+                    href="https://urok.1sept.ru/publication/79883" target="_blank">urok.1sept.ru</a></p>
+            <p class="copyright">© 2026 Химический образовательный ресурс</p>
+        </footer>
+    </div>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="taskModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeTaskModal()">&times;</span>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="test.js"></script>
+    <script src="fipi_tasks.js"></script>
+</body>
+
+</html>
